@@ -55,7 +55,7 @@ body {
 .logo-circle {
     width: 40px;
     height: 40px;
-    background-color: #A020F0; 
+    background-color: #A020F0;
     color: white;
     display: flex;
     justify-content: center;
@@ -96,13 +96,13 @@ body {
 .content-box {
     margin: 20px auto;
     padding: 20px;
-    background-color: #A020F0; 
+    background-color: #A020F0;
     width: 95%;
     height: 50vh;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     position: relative;
-    text-align: left; 
+    text-align: left;
 }
 
 .title {
@@ -118,8 +118,8 @@ body {
     font-size: 22px;
     margin-left: 100px;
     width: 55%;
-    height: auto; 
-    overflow: hidden; 
+    height: auto;
+    overflow: hidden;
 }
 
 .typing-animation p {
@@ -152,15 +152,15 @@ body {
 }
 
 .circular-logo {
-    width: 20%; 
-    height: 40vh; 
+    width: 20%;
+    height: 40vh;
     background-color: white;
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
-    top: 49%; 
-    right: 70px; 
-    transform: translateY(-50%); 
+    top: 49%;
+    right: 70px;
+    transform: translateY(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,31 +168,48 @@ body {
 }
 
 .circular-logo img {
-    width: 100%; 
+    width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 .section-center {
     margin: 20px auto;
-    padding: 20px;
-    background-color: #A020F0; 
-    width: 95%;
-    height: auto;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    padding: 40px;
+    background-color: #A020F0;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
     position: relative;
     text-align: left;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .card {
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 20px;
     margin: 20px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
     max-width: 800px;
     margin-left: 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .skills-list,
